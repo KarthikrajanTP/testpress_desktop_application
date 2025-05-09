@@ -4,14 +4,14 @@
   "main": "dist/main.js",
   "scripts": {
     "build": "tsc",
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
+    "start": "npm run build && electron-forge start",
+    "package": "npm run build && electron-forge package",
+    "make": "npm run build && electron-forge make"
   },
   "keywords": [],
-  "author": "",
+  "author": "Testpress",
   "license": "ISC",
-  "description": "",
+  "description": "Testpress Desktop Application",
   "devDependencies": {
     "@electron-forge/cli": "^7.8.0",
     "@electron-forge/maker-deb": "^7.8.0",
